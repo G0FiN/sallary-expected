@@ -50,7 +50,6 @@ export default {
 }
 
 input {
-  width: auto;
   width: 60px;
 }
 
@@ -65,5 +64,14 @@ button {
 button {
   font-size: 20px;
   font-weight: 500;
+}
+
+@media (max-width: 395px) {
+
+  input,
+  button,
+  .parameterModifier {
+    font-size: 15px;
+  }
 }
 </style>

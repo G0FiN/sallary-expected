@@ -61,4 +61,9 @@ export default {
   50% { background-position: 94% 100%}
   100% { background-position: 7% 0%}
 }
+@media (max-width: 395px) {
+.salarySum {
+  font-size: 17px;
+}
+}
 </style>
