@@ -1,18 +1,54 @@
 <template>
   <div class="imgContainer"><img alt="Vue logo" src="./assets/logo.png"></div>
-  <MonthForm />
-  <MonthForm />
-  <MonthForm />
-
+  <div class="application" v-for="(item) in monthArray" :key="item.id">
+    <MonthForm :monthData='item'/>
+    <!-- {{ index }} -->
+  </div>
+  <MonthForm :monthData='testObj'/>
+  <MonthForm :monthData='testObj'/>
 </template>
 
 <script>
 import MonthForm from './components/MonthForm.vue';
 
+/* *** *** *** *** *** *** ***  */
+const testObj = {
+  "USDmonth": 620,
+  "USDday": 28.18,
+  "USDhour": 3.52,
+  "UAHmonth": 22672.53,
+  "UAHday": 1030.57,
+  "UAHhour": 128.82,
+  "TAXEDmonth": 20108.91,
+  "TAXEDday": 914.04,
+  "TAXEDhour": 114.26,
+  "paymentExpected": 22672.53,
+  "sallaryExpected": 20108.91,
+  "parameters": {
+    "year": 2023,
+    "month": 0,
+    "days": 22,
+    "hours": 176,
+    "ESV": 1430,
+    "taxPercent": 0.05,
+    "exchangeRate": 36.5686,
+    "amount": 620
+  }
+};
+/* *** *** *** *** *** *** ***  */
+
+const monthArray = require('./data/data.json');
+
 export default {
-  name: 'App',   
-  components: {     
+  name: 'App',
+  components: {
     MonthForm
+  },
+  data() {
+    return {
+      monthArray,
+      testObj
+    }
   }
 }
 </script>
@@ -91,6 +127,23 @@ table {
   gap: 10px;
 
   padding-bottom: 150px;
+}
+
+.application {
+  font-family: CopperplateLocal;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  min-width: 256px;
+  max-width: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 10px;
 }
 
 .imgContainer {

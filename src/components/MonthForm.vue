@@ -2,7 +2,7 @@
   <div class="monthForm">
     <div class="monthFormColumns">
       <div class="firstColumnItem">
-        <MonthText month=5 year=2023 />
+        <MonthText :month='monthData.parameters.month' :year='monthData.parameters.year' />
         <div>За місяць</div>
         <div>За день</div>
         <div>За годину</div>
@@ -10,29 +10,29 @@
       <div class="columnItem">
         <div>$ USD</div>
         <div class="lines">
-          <div>730</div>
-          <div>33,18</div>
-          <div>4,14</div>
+          <div>{{ monthData.USDmonth }}</div>
+          <div>{{ monthData.USDday }}</div>
+          <div>{{ monthData.USDhour }}</div>
         </div>
       </div>
       <div class="columnItem">
         <div>₴ UAH</div>
         <div class="lines">
-          <div>26695,07</div>
-          <div>1213,41</div>
-          <div>151,67</div>
+          <div>{{ monthData.UAHmonth }}</div>
+          <div>{{ monthData.UAHday }}</div>
+          <div>{{ monthData.UAHhour }}</div>
         </div>
       </div>
       <div class="columnItem">
         <div>TAXED</div>
         <div class="lines">
-          <div>24695,07</div>
-          <div>1113,41</div>
-          <div>141,67</div>
+          <div>{{ monthData.TAXEDmonth }}</div>
+          <div>{{ monthData.TAXEDday }}</div>
+          <div>{{ monthData.TAXEDhour }}</div>
         </div>
       </div>
     </div>
-    <ParametersCard />
+    <ParametersCard :parameters='monthData' />
   </div>
 </template>
 
@@ -45,6 +45,9 @@ export default {
   components: {
     MonthText,
     ParametersCard
+  },
+  props: {
+    monthData: Object
   }
 }
 </script>
@@ -54,6 +57,7 @@ export default {
   width: 100%;
   margin: 5px;
   padding: 15px;
+  margin-bottom: 20px;
   border-radius: 15px;
   background: rgb(34, 193, 195);
   background: linear-gradient(124deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);

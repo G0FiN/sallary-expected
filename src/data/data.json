@@ -1,0 +1,71 @@
+[
+    {
+        "USDmonth": 620,
+        "USDday": 28.18,
+        "USDhour": 3.52,
+        "UAHmonth": 22672.53,
+        "UAHday": 1030.57,
+        "UAHhour": 128.82,
+        "TAXEDmonth": 20108.91,
+        "TAXEDday": 914.04,
+        "TAXEDhour": 114.26,
+        "paymentExpected": 22672.53,
+        "sallaryExpected": 20108.91,
+        "parameters": {
+            "year": 2023,
+            "month": 8,
+            "days": 23,
+            "hours": 176,
+            "ESV": 1430,
+            "taxPercent": 0.05,
+            "exchangeRate": 36.5686,
+            "amount": 620
+        }
+    },
+    {
+        "USDmonth": 620,
+        "USDday": 28.18,
+        "USDhour": 3.52,
+        "UAHmonth": 22672.53,
+        "UAHday": 1030.57,
+        "UAHhour": 128.82,
+        "TAXEDmonth": 20108.91,
+        "TAXEDday": 914.04,
+        "TAXEDhour": 114.26,
+        "paymentExpected": 22672.53,
+        "sallaryExpected": 20108.91,
+        "parameters": {
+            "year": 2024,
+            "month": 10,
+            "days": 22,
+            "hours": 176,
+            "ESV": 1430,
+            "taxPercent": 0.05,
+            "exchangeRate": 36.5686,
+            "amount": 620
+        }
+    },
+    {
+        "USDmonth": 620,
+        "USDday": 28.18,
+        "USDhour": 3.52,
+        "UAHmonth": 22672.53,
+        "UAHday": 1030.57,
+        "UAHhour": 128.82,
+        "TAXEDmonth": 20108.91,
+        "TAXEDday": 914.04,
+        "TAXEDhour": 114.26,
+        "paymentExpected": 22672.53,
+        "sallaryExpected": 20108.91,
+        "parameters": {
+            "year": 2023,
+            "month": 0,
+            "days": 22,
+            "hours": 176,
+            "ESV": 1430,
+            "taxPercent": 0.05,
+            "exchangeRate": 36.5686,
+            "amount": 620
+        }
+    }
+]
