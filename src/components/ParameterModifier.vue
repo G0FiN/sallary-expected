@@ -40,8 +40,9 @@ let testParameters = {
 let months = [];
 const newMonth = () => {
   let month = new Month(testParameters)
-  let a = localStorage.getItem('months')
-  console.log(a)
+  //let a = 
+  localStorage.getItem('months')
+  console.log(localStorage)
   months.push(month);
   localStorage.setItem('months', months);
 };

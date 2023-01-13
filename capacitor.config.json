@@ -1,0 +1,6 @@
+{
+  "appId": "expected.salary.app.build",
+  "appName": "expected.salary.app",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
